@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww29400\viewh14980\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+***************** DESCRIPTION DU AROME_ARPEGE_SIRTA_Oct2015_Oct2018.txt\
+Le fichier contient les colonnes suivantes de donn\'e9es pour la p\'e9riode octobre 2015 \'e0 dec 2017 et avec un pas horaire: \
+ANNEE, MOIS, JOUR, HEURE, SZA, AZI, \
+DIRECT, DIFFUSE, GLOBAL, cGLOBAL, \
+GLO_FCAST1, GLO_FCAST2, GLO_FCAST3, GLO_FCAST4, GLO_FCAST5, GLO_FCAST6, \
+T2, \
+T2_FCAST1, T2_FCAST2, T2_FCAST3, T2_FCAST4, T2_FCAST5, T2_FCAST6, \
+RH, \
+RH_FCAST1, RH_FCAST2, RH_FCAST3, RH_FCAST4, RH_FCAST5, RH_FCAST6, \
+\
+Description de chaque colonne:\
+\
+Variables de temps:\
+ANNEE\
+MOIS\
+JOUR\
+HEURE\
+\
+Angles solaires: \
+AZI: angle azimuthal solaire (en deg)\
+SZA: angle z\'e9nithal solaire (en deg)\
+\
+Mesures du SIRTA: \
+DIFFUSE: irradiance solaire diffus horizontal\
+DIRECT: irradiance direct normal\
+GLOBAL: irradiance solaire global horizontal\
+T2: temp\'e9rature de l'air \'e0 2 m\
+RH: humidit\'e9 relative de l'air \'e0 2m\
+\
+Modelisation par ciel clair:\
+cGLOBAL: Estimation de l'irradiance solaire global horizontal pour des conditions sans nuages (ciel clair). Le mod\'e8le utilis\'e9 est celui de la page 23 (\'e9quation 6) du rapport de stage M2 de Gwenna\'eblle LeBars. \
+\
+Pr\'e9visions AROME et ARPEGE\
+T2_FCAST\
+RH_FCAST\
+GLO_FCAST\
+\
+Chacune de ces matrices "FCAST" contiennent 6 colonnes, qui correspondent \'e0: \
+1) Pr\'e9vision par AROME faite \'e0 minuit du jour J sur un point de grille \
+2) Pr\'e9vision par AROME faite \'e0 minuit du jour J sur un point de grille \'e0 cot\'e9\
+3) Pr\'e9vision par ARPEGE faire \'e0 minuit du jour J\
+4) Pr\'e9vision par AROME faite \'e0 minuit du jour J-1 sur un point de grille \
+5) Pr\'e9vision par AROME faite \'e0 minuit du jour J-1 sur un point de grille \'e0 cot\'e9\
+6) Pr\'e9vision par ARPEGE faire \'e0 minuit du jour J-1\
+\
+Cela fait que pour chaque jour il y ait 6 pr\'e9visions disponibles, 3 qui ont \'e9t\'e9 faites \'e0 minuit du m\'eame jour  (colonnes 1 \'e0 3) et 3 qui ont \'e9t\'e9 faites \'e0 midi de la veille (colonnes 4 \'e0 6). \
+Je rappele que la resolution des points de grille d'AROME est de 1.3km et pour ARPEGE c'est 7.5 km. Pour info, le premier point de grille d'AROME consid\'e8re un surface avec 33% de culture et 67% de ville, et le deuxi\'e8me 100% de culture. Pour ARPEGE on a une vegetation de 67% le reste etant du sol nu. }
